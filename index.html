@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management</title>
+    <style>
+        body { font-family: Arial; background: #f0f0f0; }
+        .container { width: 400px; margin: 50px auto; 
+                     background: white; padding: 30px; 
+                     border-radius: 10px; }
+        h2 { text-align: center; color: #333; }
+        input, select { width: 100%; padding: 10px; 
+                        margin: 10px 0; border-radius: 5px; 
+                        border: 1px solid #ccc; }
+        button { width: 100%; padding: 10px; 
+                 background: #4CAF50; color: white; 
+                 border: none; border-radius: 5px; 
+                 font-size: 16px; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Student</h2>
+        <form action="StudentServlet" method="post">
+            <input type="text" name="name" 
+                   placeholder="Student Name" required/>
+            <input type="email" name="email" 
+                   placeholder="Email" required/>
+            <input type="text" name="phone" 
+                   placeholder="Phone Number"/>
+            <input type="text" name="course" 
+                   placeholder="Course"/>
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+</body>
+</html>
